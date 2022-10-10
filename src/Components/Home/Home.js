@@ -25,7 +25,7 @@ const Home = () => {
             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
               Brand new
             </p>
-            <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-amber-500 sm:text-4xl sm:leading-none">
+            <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-teal-accent-400 sm:text-4xl sm:leading-none">
               Everything you
               <br className="hidden md:block" />
               can imagine{" "}

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "./logo.png";
 
 const Header = () => {
@@ -29,22 +29,25 @@ const Header = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Home</a>
+                <NavLink to="/home">Home</NavLink>
               </li>
               <li tabIndex={0}>
-                <a className="justify-between">Statistics</a>
+                <NavLink to="/statistics">Statistics</NavLink>
               </li>
               <li>
-                <a>Item 3</a>
+                <NavLink to="/blog">Blog</NavLink>
+              </li>
+              <li>
+                <NavLink to="/abouts">About</NavLink>
               </li>
             </ul>
           </div>
-          <NavLink
+          <Link
             to="/"
-            className="btn btn-ghost rounded h-full normal-case text-xl w-1/4"
+            className="btn btn-ghost rounded h-full normal-case text-xl lg:w-1/4 w-32"
           >
             <img className="w-full" src={logo} alt="" />
-          </NavLink>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
