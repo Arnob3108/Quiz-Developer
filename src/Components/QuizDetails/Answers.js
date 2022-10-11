@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 const Answers = ({ answers, allQuestion }) => {
   const { correctAnswer } = allQuestion;
 
-  const handleAnswer = () => {
+  const handleAnswer = (answers) => {
     if (answers === correctAnswer) {
       toast.success("🦄 Wow! Your Answer is Correct", {
         position: "top-center",
@@ -33,7 +33,13 @@ const Answers = ({ answers, allQuestion }) => {
 
   return (
     <div>
-      <button
+      <label className="label cursor-pointer flex bg-purple-900 lg:w-3/4 w-full p-3 rounded-2xl mt-5 hover:glass">
+        <div onClick={() => handleAnswer(answers)} className="flex">
+          <input type="radio" name="radio-3" className="radio radio-primary " />
+        </div>
+        <p className="font-bold text-lg lg:mr-56 ">{answers}</p>
+      </label>
+      {/* <button
         onClick={handleAnswer}
         className="form-control flex-row bg-purple-900 lg:w-3/4 w-full p-3 rounded-2xl mt-5 hover:glass"
       >
@@ -45,7 +51,7 @@ const Answers = ({ answers, allQuestion }) => {
           />
         </label>
         <p className="ml-5">{answers}</p>
-      </button>
+      </button> */}
     </div>
   );
 };
