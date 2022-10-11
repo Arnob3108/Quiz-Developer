@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Abouts = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -14,14 +19,17 @@ const Abouts = () => {
             <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
           </h2>
           <p className="text-gray-500 lg:text-sm lg:max-w-md">
-            "Class is dead", says Foucault; however, according to Reicher, it is
-            not so much class that is dead, but rather the absurdity, and some
-            would say the paradigm, of class. However, the subject is
-            interpolated into a postpatriarchialist dialectic theory that
-            includes consciousness as a totality.
+            The quiz can be described as a type of game where competitors try
+            their best to answer the questions in less time. The quiz is not
+            about random topics, specific topics. Teachers can organize quiz
+            competition to test the knowledge of students apart from studies or
+            about any topic of syllabus.
           </p>
         </div>
-        <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
+        <div
+          data-aos="zoom-in-up"
+          className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2"
+        >
           <a href="/" aria-label="View Item">
             <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
               <img
@@ -118,7 +126,10 @@ const Abouts = () => {
       {/* 2nd part */}
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="grid max-w-screen-lg gap-8 row-gap-5 md:row-gap-8 sm:mx-auto lg:grid-cols-2">
-          <div className="transition duration-300 transform bg-white rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center">
+          <div
+            data-aos="zoom-in-left"
+            className="transition duration-300 transform bg-white rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center"
+          >
             <div className="relative">
               <img
                 className="object-cover w-full h-64 rounded-t lg:h-80 xl:h-96"
@@ -132,9 +143,11 @@ const Abouts = () => {
                 Join Team
               </h5>
               <p className="mb-5 text-gray-700">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque rem aperiam, eaque ipsa quae. Sed ut
-                perspiciatis unde.
+                The quiz can be described as a type of game where competitors
+                try their best to answer the questions in less time. The quiz is
+                not about random topics, specific topics. Teachers can organize
+                quiz competition to test the knowledge of students apart from
+                studies or about any topic of syllabus.
               </p>
               <button
                 type="submit"
@@ -144,7 +157,10 @@ const Abouts = () => {
               </button>
             </div>
           </div>
-          <div className="transition duration-300 transform bg-white rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center">
+          <div
+            data-aos="zoom-in-right"
+            className="transition duration-300 transform bg-white rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center"
+          >
             <div className="relative">
               <img
                 className="object-cover w-full h-64 rounded-t lg:h-80 xl:h-96"
@@ -158,9 +174,11 @@ const Abouts = () => {
                 Hire Us
               </h5>
               <p className="mb-5 text-gray-700">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque rem aperiam, eaque ipsa quae. Sed ut
-                perspiciatis unde.
+                The quiz can be described as a type of game where competitors
+                try their best to answer the questions in less time. The quiz is
+                not about random topics, specific topics. Teachers can organize
+                quiz competition to test the knowledge of students apart from
+                studies or about any topic of syllabus.
               </p>
               <button
                 type="submit"
