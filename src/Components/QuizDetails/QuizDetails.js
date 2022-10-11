@@ -21,6 +21,9 @@ const QuizDetails = () => {
           ></SingleQuiz>
         ))}
       </div>
+      <div>
+        <h1>marks</h1>
+      </div>
     </div>
   );
 };
