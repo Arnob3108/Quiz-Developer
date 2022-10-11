@@ -1,14 +1,33 @@
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Answers = ({ answers, allQuestion }) => {
-  console.log(allQuestion);
   const { correctAnswer } = allQuestion;
 
   const handleAnswer = () => {
     if (answers === correctAnswer) {
-      console.log("correct");
+      toast.success("🦄 Wow! Your Answer is Correct", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
     } else {
-      console.log("vul");
+      toast.error("🦄 oh no! Your Answer is Wrong", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
     }
   };
 
