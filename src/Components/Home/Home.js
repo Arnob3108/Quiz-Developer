@@ -1,7 +1,12 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
+import Quizs from "../Quizs/Quizs";
+
 import quiz from "./quiz1.jpg";
 
 const Home = () => {
+  const totalQuiz = useLoaderData().data;
+  console.log(totalQuiz);
   return (
     <div>
       <div className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
@@ -59,7 +64,25 @@ const Home = () => {
         </div>
       </div>
       {/* 2nd hero part */}
-      <h1 className="text-6xl text-center my-20">Give A Quick Test</h1>
+      <div>
+        <div>
+          <div className="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8 lg:ml-60 my-16">
+            <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none md:mb-6 group">
+              <span className="inline-block text-white mb-1 sm:mb-4">
+                There is no must in art
+                <br className="hidden md:block" />
+                because art is free.
+              </span>
+              <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:gap-6 sm:grid-cols mx-5 ">
+        {totalQuiz.map((quiz) => (
+          <Quizs key={quiz.id} quiz={quiz}></Quizs>
+        ))}
+      </div>
     </div>
   );
 };

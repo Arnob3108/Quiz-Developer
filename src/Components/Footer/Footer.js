@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../Header/logo.png";
 
 const Footer = () => {
@@ -9,14 +9,14 @@ const Footer = () => {
         <div className="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
             <div className="md:max-w-md lg:col-span-2">
-              <NavLink
+              <Link
                 to="/"
                 aria-label="Go home"
                 title="Company"
                 className="inline-flex items-center rounded normal-case text-xl w-2/4"
               >
                 <img className="w-full" src={logo} alt="" />
-              </NavLink>
+              </Link>
               <div className="mt-4 lg:max-w-sm">
                 <p className="text-sm text-deep-purple-50">
                   The quiz can be described as a type of game where competitors
