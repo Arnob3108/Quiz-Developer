@@ -8,9 +8,9 @@ const QuizDetails = () => {
 
   return (
     <div>
-      <div className="w-9/12 flex items-center justify-around text-green-200">
+      <div className="lg:w-9/12 w-full flex items-center justify-around text-green-200">
         <img className="w-20" src={logo} alt="" />
-        <h1 className="text-4xl font-bold">Category: {name}</h1>
+        <h1 className="lg:text-4xl text-2xl font-bold">Category: {name}</h1>
         <p className="text-2xl font-semibold">Total Quiz: {total}</p>
       </div>
       <div>

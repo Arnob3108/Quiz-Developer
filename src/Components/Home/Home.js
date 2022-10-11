@@ -69,9 +69,8 @@ const Home = () => {
           <div className="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8 lg:ml-60 my-16">
             <h2 className="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none md:mb-6 group">
               <span className="inline-block text-white mb-1 sm:mb-4">
-                There is no must in art
-                <br className="hidden md:block" />
-                because art is free.
+                Give a Quick <br className="hidden md:block" />
+                Quiz Test, is free.
               </span>
               <div className="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
             </h2>
@@ -79,7 +78,7 @@ const Home = () => {
         </div>
       </div>
       {/* data loaded */}
-      <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:gap-6 sm:grid-cols mx-5 ">
+      <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:gap-6 sm:grid-cols md:grid-cols-2 mx-5 ">
         {totalQuiz.map((quiz) => (
           <Quizs key={quiz.id} quiz={quiz}></Quizs>
         ))}

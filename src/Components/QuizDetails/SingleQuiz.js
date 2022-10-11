@@ -14,7 +14,7 @@ const SingleQuiz = ({ allQuestion }) => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6"
+          className="lg:w-6 w-16 h-6 "
         >
           <path
             strokeLinecap="round"
