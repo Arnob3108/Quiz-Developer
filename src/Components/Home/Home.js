@@ -41,8 +41,7 @@ const Home = () => {
               Brand new
             </p>
             <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-teal-accent-400 sm:text-4xl sm:leading-none">
-              Everything you
-              <br className="hidden md:block" />
+              Everything you <br className="hidden md:block" />
               can imagine{" "}
               <span className="inline-block text-deep-purple-accent-400">
                 is real

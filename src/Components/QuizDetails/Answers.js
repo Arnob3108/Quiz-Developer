@@ -33,7 +33,7 @@ const Answers = ({ answers, allQuestion }) => {
 
   return (
     <div>
-      <div className="form-control flex-row bg-purple-900 w-3/4 p-3 rounded-2xl mt-5 hover:bg-gradient-to-r from-slate-800 to-gray-800">
+      <div className="form-control flex-row bg-purple-900 lg:w-3/4 p-3 rounded-2xl mt-5 hover:bg-gradient-to-r from-slate-800 to-gray-800">
         <label onClick={handleAnswer} className="label cursor-pointer">
           <input
             type="radio"
