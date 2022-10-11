@@ -26,6 +26,12 @@ const Quizs = ({ quiz }) => {
             </div>
           </div>
         </Link>
+        <div className="flex items-center justify-around text-green-200 mt-5">
+          <Link to={`/quiz/${id}`}>
+            <button className="btn glass">Take Quiz</button>
+          </Link>
+          <h1 className="text-xl">Total: {total}</h1>
+        </div>
       </div>
     </div>
   );

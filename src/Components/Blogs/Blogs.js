@@ -8,8 +8,9 @@ const Blogs = () => {
   }, []);
   return (
     <div className="w-full mx-auto flex flex-col items-center m-20">
-      <div data-aos="fade-down-right">
+      <div>
         <label
+          data-aos="fade-down-right"
           htmlFor="my-modal-1"
           className="btn modal-button lg:text-4xl text-lg bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900 hover:shadow-xl hover:shadow-purple-500/50"
         >
@@ -33,8 +34,9 @@ const Blogs = () => {
         </label>
       </div>
       {/* 2nd  */}
-      <div data-aos="fade-down-left" className="my-24">
+      <div className="my-24">
         <label
+          data-aos="fade-down-left"
           htmlFor="my-modal-2"
           className="btn modal-button lg:text-4xl text-lg bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900 hover:shadow-xl hover:shadow-purple-500/50"
         >
@@ -65,8 +67,9 @@ const Blogs = () => {
         </label>
       </div>
       {/* 3rd  */}
-      <div data-aos="fade-down-right">
+      <div>
         <label
+          data-aos="fade-down-right"
           htmlFor="my-modal-3"
           className="btn modal-button lg:text-4xl text-lg bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900 hover:shadow-xl hover:shadow-purple-500/50"
         >

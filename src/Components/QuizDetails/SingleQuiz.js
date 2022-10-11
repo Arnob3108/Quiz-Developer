@@ -28,7 +28,7 @@ const SingleQuiz = ({ allQuestion }) => {
     >
       <div className="flex items-center justify-around text-white">
         <h1 className="lg:text-3xl text-xl">{question}</h1>
-        <button onClick={handleAlart} className="btn">
+        <button onClick={handleAlart} className="btn glass">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -52,11 +52,7 @@ const SingleQuiz = ({ allQuestion }) => {
       </div>
       <div className="grid text-xl font-semibold justify-center items-center grid-cols-1 lg:grid-cols-2 text-green-200">
         {options.map((answers) => (
-          <Answers
-            key={id}
-            answers={answers}
-            allQuestion={allQuestion}
-          ></Answers>
+          <Answers answers={answers} allQuestion={allQuestion}></Answers>
         ))}
       </div>
     </div>

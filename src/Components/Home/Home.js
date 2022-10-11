@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Quizs from "../Quizs/Quizs";
 import quiz from "./quiz1.jpg";
 import AOS from "aos";
@@ -56,19 +56,19 @@ const Home = () => {
               or about any topic of syllabus.
             </p>
             <div className="flex items-center">
-              <a
-                href="/"
+              <Link
+                to="/blogs"
                 className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
               >
-                Get started
-              </a>
-              <a
-                href="/"
+                Read Blogs
+              </Link>
+              <Link
+                to="/abouts"
                 aria-label=""
                 className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ const Statistics = () => {
   return (
     <div>
       <div>
-        <h1 className="text-4xl text-center font-bold my-10">
+        <h1 className="text-4xl text-center font-bold my-10 text-green-200">
           Total Quiz Statistics:
         </h1>
       </div>
