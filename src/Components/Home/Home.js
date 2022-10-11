@@ -78,6 +78,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* data loaded */}
       <div className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:gap-6 sm:grid-cols mx-5 ">
         {totalQuiz.map((quiz) => (
           <Quizs key={quiz.id} quiz={quiz}></Quizs>
