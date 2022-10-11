@@ -33,16 +33,19 @@ const Answers = ({ answers, allQuestion }) => {
 
   return (
     <div>
-      <div className="form-control flex-row bg-purple-900 lg:w-3/4 p-3 rounded-2xl mt-5 hover:bg-gradient-to-r from-slate-800 to-gray-800">
-        <label onClick={handleAnswer} className="label cursor-pointer">
+      <button
+        onClick={handleAnswer}
+        className="form-control flex-row bg-purple-900 lg:w-3/4 p-3 rounded-2xl mt-5 hover:bg-gradient-to-r from-slate-800 to-gray-800"
+      >
+        <label className="label cursor-pointer">
           <input
             type="radio"
             name="radio-6"
             className="radio checked:bg-blue-500"
           />
-          <p className="ml-5">{answers}</p>
         </label>
-      </div>
+        <p className="ml-5">{answers}</p>
+      </button>
     </div>
   );
 };
