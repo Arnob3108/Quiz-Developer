@@ -6,7 +6,7 @@
 
 In the project directory, you can run and configur it.
 
-### + In this project I used react dowter dom to make it single page application
+- ### + In this project I used react dowter dom to make it single page application
 
 ### + I also used tailwind components such as daisyUI and kitwindUI components
 
