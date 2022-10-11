@@ -35,7 +35,7 @@ const Answers = ({ answers, allQuestion }) => {
     <div>
       <button
         onClick={handleAnswer}
-        className="form-control flex-row bg-purple-900 lg:w-3/4 p-3 rounded-2xl mt-5 hover:bg-gradient-to-r from-slate-800 to-gray-800"
+        className="form-control flex-row bg-purple-900 lg:w-3/4 w-full p-3 rounded-2xl mt-5 hover:glass"
       >
         <label className="label cursor-pointer">
           <input

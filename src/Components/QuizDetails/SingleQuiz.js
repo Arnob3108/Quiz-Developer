@@ -27,7 +27,10 @@ const SingleQuiz = ({ allQuestion }) => {
       className=" w-11/12 lg:mx-auto mx-auto border-2 lg:p-10 p-5 rounded-2xl my-5 lg:m-10 bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900 hover:shadow-xl hover:shadow-purple-400/70"
     >
       <div className="flex items-center justify-around text-white">
-        <h1 className="lg:text-3xl text-xl">{question}</h1>
+        <h1
+          className="lg:text-3xl text-xl"
+          dangerouslySetInnerHTML={{ __html: question }}
+        ></h1>
         <button onClick={handleAlart} className="btn glass">
           <svg
             xmlns="http://www.w3.org/2000/svg"
