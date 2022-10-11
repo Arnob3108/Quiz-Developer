@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Blogs = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="w-full mx-auto flex flex-col items-center m-20">
-      <div>
+      <div data-aos="fade-down-right">
         <label
           htmlFor="my-modal-1"
           className="btn modal-button lg:text-4xl text-lg bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900 hover:shadow-xl hover:shadow-purple-500/50"
@@ -28,7 +33,7 @@ const Blogs = () => {
         </label>
       </div>
       {/* 2nd  */}
-      <div className="my-24">
+      <div data-aos="fade-down-left" className="my-24">
         <label
           htmlFor="my-modal-2"
           className="btn modal-button lg:text-4xl text-lg bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900 hover:shadow-xl hover:shadow-purple-500/50"
@@ -60,7 +65,7 @@ const Blogs = () => {
         </label>
       </div>
       {/* 3rd  */}
-      <div>
+      <div data-aos="fade-down-right">
         <label
           htmlFor="my-modal-3"
           className="btn modal-button lg:text-4xl text-lg bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900 hover:shadow-xl hover:shadow-purple-500/50"
