@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Abouts = () => {
   useEffect(() => {
@@ -30,7 +31,7 @@ const Abouts = () => {
           data-aos="zoom-in-up"
           className="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2"
         >
-          <a href="/" aria-label="View Item">
+          <Link to="/" aria-label="View Item">
             <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
               <img
                 className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -48,8 +49,8 @@ const Abouts = () => {
                 </p>
               </div>
             </div>
-          </a>
-          <a href="/" aria-label="View Item">
+          </Link>
+          <Link to="/" aria-label="View Item">
             <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
               <img
                 className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -67,8 +68,8 @@ const Abouts = () => {
                 </p>
               </div>
             </div>
-          </a>
-          <a href="/" aria-label="View Item">
+          </Link>
+          <Link to="/" aria-label="View Item">
             <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
               <img
                 className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -85,8 +86,8 @@ const Abouts = () => {
                 </p>
               </div>
             </div>
-          </a>
-          <a href="/" aria-label="View Item">
+          </Link>
+          <Link to="/" aria-label="View Item">
             <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
               <img
                 className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -104,11 +105,11 @@ const Abouts = () => {
                 </p>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
         <div className="text-center">
-          <a
-            href="/"
+          <Link
+            to="/"
             aria-label=""
             className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
           >
@@ -120,7 +121,7 @@ const Abouts = () => {
             >
               <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
       {/* 2nd part */}

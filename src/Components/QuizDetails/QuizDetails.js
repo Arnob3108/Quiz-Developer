@@ -5,6 +5,7 @@ import SingleQuiz from "./SingleQuiz";
 const QuizDetails = () => {
   const quiz = useLoaderData().data;
   const { name, logo, total, questions } = quiz;
+  var number = 0;
 
   return (
     <div>
@@ -15,10 +16,7 @@ const QuizDetails = () => {
       </div>
       <div className="w-full">
         {questions.map((allQuestion) => (
-          <SingleQuiz
-            key={allQuestion.id}
-            allQuestion={allQuestion}
-          ></SingleQuiz>
+          <SingleQuiz allQuestion={allQuestion}></SingleQuiz>
         ))}
       </div>
     </div>
